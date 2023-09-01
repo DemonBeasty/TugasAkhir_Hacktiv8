@@ -18,6 +18,45 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+
+    <style>
+        /* Kode CSS lainnya */
+      
+        .skills .progress {
+          height: 60px !important;
+          display: block !important;
+          background: none !important;
+          border-radius: 0 !important;
+        }
+      
+        .skills .progress .skill {
+          padding: 0 !important;
+          margin: 0 0 6px 0 !important;
+          text-transform: uppercase !important;
+          display: block !important;
+          font-weight: 600 !important;
+          font-family: "Poppins", sans-serif !important;
+          color: #050d18 !important;
+        }
+      
+        .skills .progress .skill .val {
+          float: right;
+          font-style: normal;
+        }
+      
+        .skills .progress-bar-wrap {
+          background: darkblue;
+          height: 10px;
+        }
+      
+        .skills .progress-bar {
+          width: 1px !important;
+          height: 10px !important;
+          transition: 0.9s;
+          background-color: white !important;
+        }
+      </style>
+      
     <body id="page-top">
         <!-- Masthead-->
         <header class="masthead">
@@ -62,29 +101,30 @@
                     <div class="col-lg-8 text-center">
                         <h2 class="text-white mt-0">About</h2>
                         <hr class="divider divider-light" />
-                        <p class="text-white-75 mb-4">Hallo berikut deskripsi dan biodata singkat mengenai diri saya</p> 
+                        <p class="text-white-75 mb-4">Hallo berikut deskripsi dan biodata singkat mengenai diri saya</p>
                         <div class="row">
-                                <div   div class="col-lg-6 text-white-75 mb-4 text-left">
-                                    <ul>
-                                         <li><strong>Tanggal Lahir :</strong> <span>5 Juni 1999</span></li>
-                                         <li><strong>Nomor Telfon  :</strong> <span>+62 895333176343</span></li>
-                                         <li><strong>Domisili      :</strong> <span>jakarta, Indonesia</span></li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-6 text-white-75 mb-4">
-                                    <ul>
-                                        <li><strong>Umur:</strong> <span>24</span></li>
-                                        <li><strong>Pendidikan:</strong> <span>D4 teknologi Permainan</span></li>
-                                        <li><strong>Email:</strong> <span>dimsputraa1@gmail.com</span></li>
-                                    </ul>
-                                </div>
-                        </div>            
-                        <p class="text-white-75 mb-4">Halo perkenalkan saya Dimas Putra Pangestu Lulusan Teknologi dari Politeknik Negeri Media Kreatif, saya memiliki kemampuan dalam menggunakan unity Engine, serta fundamenta bahasa pemograman C dan C#. serta telah menyelesaikan kursus Belajar Langkah Fundamental Untuk Menjadi Web Programmer dari Hactiv8</p>   
-                        <hr class="divider divider-light" />             
+                            <div class="col-lg-6 text-white-75 mb-4 text-left">
+                                <ul>
+                                    <li><strong>Tanggal Lahir :</strong> <span>5 Juni 1999</span></li>
+                                    <li><strong>Nomor Telfon :</strong> <span>+62 895333176343</span></li>
+                                    <li><strong>Domisili :</strong> <span>jakarta, Indonesia</span></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 text-white-75 mb-4">
+                                <ul>
+                                    <li><strong>Umur:</strong> <span>24</span></li>
+                                    <li><strong>Pendidikan:</strong> <span>D4 teknologi Permainan</span></li>
+                                    <li><strong>Email:</strong> <span>dimsputraa1@gmail.com</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="text-white-75 mb-4">Halo perkenalkan saya Dimas Putra Pangestu Lulusan Teknologi dari Politeknik Negeri Media Kreatif, saya memiliki kemampuan dalam menggunakan Unity Engine, serta memiliki pengetahuan dalam bahasa pemograman C dan C#. Saya juga telah menyelesaikan kursus Belajar Langkah Fundamental Untuk Menjadi Web Programmer dari Hactiv8.</p>
+                        <hr class="divider divider-light" />
                     </div>
                 </div>
             </div>
         </section>
+        
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
@@ -93,7 +133,7 @@
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skill">Skill</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skill</a></li>
                         <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
@@ -217,18 +257,168 @@
                 </div>
             </div>
         </div>
-        <!-- Skill -->
-        <section class="page-section" style="background-color: aquamarine;" id="skill">
-            <div class="Skill">
-             <h1>Helloword Skill</h1>
+
+        <!-- Skills -->
+        <section id="skills" class="skills section-bg" style="background-color: aquamarine;">
+            <div class="container">
+      
+              <div class="section-title">
+                <h2>Skills</h2>
+                <p>Berikut skill dan kemampuan saya dalam programming dan design 3Dimensi </p>
+              </div>
+      
+              <div class="row skills-content">
+      
+                <div class="col-lg-6" data-aos="fade-up">
+      
+                  <div class="progress">
+                    <span class="skill">HTML <i class="val">60%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+      
+                  <div class="progress">
+                    <span class="skill">CSS <i class="val">50%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+      
+                  <div class="progress">
+                    <span class="skill">JavaScript <i class="val">25%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+      
+                </div>
+      
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+      
+                  <div class="progress">
+                    <span class="skill">Game Developer <i class="val">80%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+      
+                  <div class="progress">
+                    <span class="skill">C# for Game Developer <i class="val">60%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+      
+                  <div class="progress">
+                    <span class="skill">3D Asset <i class="val">80%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
             </div>
-         </section>
+          </section>
         <!-- Resume-->
-        <section class="page-section" style="background-color: blueviolet;" id="resume">
-           <div class="Resume">
-            <h1>Helloword</h1>
-           </div>
-        </section>
+        <section id="resume" class="resume">
+            <div class="container">
+      
+              <div class="section-title ">
+                <h2>Resume</h2>
+                <p class="justify-content-center">Halo perkenalkan saya Dimas Putra Pangestu Lulusan Teknologi dari Politeknik Negeri Media Kreatif, saya memiliki kemampuan dalam menggunakan unity Engine, serta fundamenta bahasa pemograman C dan C#. serta telah menyelesaikan kursus Belajar Langkah Fundamental Untuk Menjadi Web Programmer dari Hactiv8</p>
+              </div>
+      
+              <div class="row">
+                <div class="col-lg-6" data-aos="fade-up">
+                  <h3 class="resume-title">Sumary</h3>
+                  <div class="resume-item pb-0">
+                    <h4>Dimas Putra Pangestu</h4>
+                    <p><em>Sebagai lulusan Teknologi Permainan dari Kampus Politeknik Negeri Media Kreatif, saya memiliki kemampuan dalam menggunakan Unity Engine, serta fundamental bahasa pemrograman C#. Saya juga memiliki pengalaman mengikuti kursus bahasa C yang diadakan oleh course-net,serta telah menyelesaikan kursus Belajar Langkah Fundamental Untuk Menjadi Web Programmer dari Hactiv8. Kursus-kursus ini memberi saya pemahaman yang kuat tentang bahasa pemrograman dan teknologi web serta keterampilan pemecahan masalah yang dibutuhkan  untuk menjadi seorang programmer. Saya sangat antusias untuk belajar lebih dalam mengenai web programer dalam botcamp ini, dan siap untuk terus belajar dan tumbuh bersama enigmaCamp. Saya juga mudah beradaptasi dengan lingkungan baru, memiliki pikiran terbuka, motivasi untuk terus belajar, Saya berkomitmen untuk menjadi pribadi yang baik dalam segala hal.</em></p>
+                    <ul>
+                      <li>JAkARTA, Indonesia</li>
+                      <li>+62 895333176343</li>
+                      <li>dimsputraa1@gmail.com</li>
+                    </ul>
+                  </div>
+      
+                  <h3 class="resume-title">Education</h3>
+                  <div class="resume-item">
+                    <h4>Game Technology</h4>
+                    <h5>2018 - 2022</h5>
+                    <p><em>Politeknik Negeri Media Kreatif</em></p>
+                    <p></p>
+                  </div>
+                  <div class="resume-item">
+                    <h4>Ilmu Pengetahuan Sosial</h4>
+                    <h5>2014 - 2017</h5>
+                    <p><em>SMAN 40 JAKARTA</em></p>
+                  </div>
+                  <h3 class="resume-title">Course Experences</h3>
+                  <div class="resume-item">
+                    <h4><li>Kementrian Perindustrian (Balai Diklat Industri Denpasar)</li> </h4>
+                    <h5>Juni – Agustus 2021</h5>
+                    <ul>
+                        <li>Diklat Pembuatan Aset Animasi 3 Dimensi</li>
+                    </ul>
+                  </div>
+                  <div class="resume-item">
+                    <h4><li>Course-Net Indonesia </li> </h4>
+                    <h5>4 - 8 July 2023</h5>
+                    <ul>
+                        <li>Teknik Penulisan Kode Pemrograman Perangkat Lunak Aplikasi menggunakan Bahasa C bagi Pengembang Aplikasi dan Sistem</li>
+                    </ul>
+                  </div>
+                  <div class="resume-item">
+                    <h4><li>Hacktiv8</li> </h4>
+                    <h5>15 - 31 Agustus 2023</h5>
+                    <ul>
+                        <li>Belajar Langkah Fundamental Untuk Menjadi Web Programmer</li>
+                    </ul>
+                  </div>
+                  
+
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                  <h3 class="resume-title">Job Experiences</h3>
+                  <div class="resume-item">
+                    <h4>PT Karunia Berlian Makmur</h4>
+                    <h4> <li>Promotor</li> </h4>
+                    <h5>10 November 2020 – 01 Juni 2021</h5>
+                    <p><em>Jakarta, Indonesia </em></p>
+                    <ul>
+                      <li>Menjual produk Handphone Gadget</li>
+                      <li>Membantu mengatasi permasalahan tim sales dan ikut melakukan atau mendampingi presentasi tim sales jika diperlukan </li>
+                      <li>Memberikan laporan penjualan kepada supervisor</li>
+                      <li>Mensosialisasikan dan memberitahu informasi mengenai penjualan yang baru kepada konsumen</li>
+                    </ul>
+                  </div>
+                  <div class="resume-item">
+                    <h4>PT Sapta Tunas Teknologi</h4>
+                    <h4><li>IT ENGINEER</li></h4>
+                    <h5>Oktober 2021 – September 2022</h5>
+                    <p><em>Jakarta, Indonesia</em></p>
+                    <ul>
+                      <li>Melakukan instalasi dan implementasi pada perangkat</li>
+                      <li>Melakukan setting pada Ip addres</li>
+                      <li>Melakukan backup data dari perangkat lama</li>
+                    </ul>
+                  </div>
+                  <div class="resume-item">
+                    <h4>PT. Maulidan Teknologi Kreatif</h4>
+                    <h4><li>Game Tester</li></h4>
+                    <h5>Februari – Agustus 2021</h5>
+                    <p><em>Surabaya, Indonesia</em></p>
+                    <ul>
+                      <li>Melakukan Testing pada game yang sudah diperbarui oleh programmer</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </section><!-- End Resume Section -->
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container px-4 px-lg-5">
